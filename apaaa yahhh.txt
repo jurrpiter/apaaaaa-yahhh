@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Buatan Juro 😎</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    button {
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      background-color: white;
+      color: #0072ff;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    #response {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>marah marah terus nih mau aqua apa aqu aja?</h1>
+
+  <div>
+    <button onclick="jawab('aqua')">aqua</button>
+    <button onclick="jawab('juro')">Juro si kasep</button>
+  </div>
+
+  <div id="response"></div>
+
+  <script>
+    function jawab(pilihan) {
+      const res = document.getElementById("response");
+      if (pilihan === 'aqua') {
+        res.textContent = "thanks for all ya kak, makasi bye";
+      } else {
+        res.textContent = "jangan marah lagi yah😢";
+      }
+    }
+  </script>
+
+</body>
+</html>
